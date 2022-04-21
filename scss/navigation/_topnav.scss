@@ -1,6 +1,6 @@
-// 
+//
 // Topnav
-// 
+//
 
 .sb-topnav {
     padding-left: 0;
@@ -11,7 +11,13 @@
         width: $sidenav-base-width;
         padding-left: $navbar-padding-x;
         padding-right: $navbar-padding-x;
+        background-color: $white;
         margin: 0;
+
+        > a {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
     }
 
     &.navbar-dark {

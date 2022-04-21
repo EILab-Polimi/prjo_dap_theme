@@ -1,6 +1,6 @@
-// 
+//
 // Navigation
-// 
+//
 
 // Z index variables
 $zindex-content: 1037 !default;
@@ -26,6 +26,11 @@ $sidenav-light-link-color: $sidenav-light-color;
 $sidenav-light-link-active-color: $primary;
 $sidenav-light-icon-color: $gray-500;
 $sidenav-light-footer-bg: $gray-200;
+
+// -- Sidenav Dap
+$sidenav-dap-bg: $primary;
+$sidenav-dap-color: $white;
+
 
 // Color variables for the topnav
 $topnav-dark-toggler-color: fade-out($white, 0.5);
