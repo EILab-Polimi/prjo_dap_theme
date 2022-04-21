@@ -3,7 +3,8 @@
 [Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.
 
 ## Development.
-TODO
+Sources at https://github.com/StartBootstrap/startbootstrap-sb-admin
+Taken from https://startbootstrap.com/previews/sb-admin
 
 ### CSS compilation.
 
