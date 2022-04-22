@@ -3,6 +3,8 @@
 //
 
 .sb-topnav {
+    padding-top: $navbar-brand-padding-y;
+    padding-bottom: $navbar-brand-padding-y;
     padding-left: 0;
     height: $topnav-base-height;
     z-index: $zindex-topnav;
