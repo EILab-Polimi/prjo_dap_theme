@@ -12355,6 +12355,7 @@ code {
   flex-direction: column;
   height: 100%;
   flex-wrap: nowrap;
+  background-color: #fff;
 }
 .region-sidebar-nav .menu--sidebar-menu {
   flex-grow: 1;
@@ -12364,7 +12365,7 @@ code {
   flex-wrap: nowrap;
 }
 .region-sidebar-nav .menu--sidebar-menu .nav .nav-item, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header .nav-item, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header .nav-item {
-  padding: 0.75rem 2rem 0.75rem;
+  padding: 0.75rem 0 0 0.75rem;
   font-size: 0.75rem;
   font-weight: bold;
 }
@@ -12374,7 +12375,7 @@ code {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   position: relative;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 6px 0px 0px 6px;
 }
 .region-sidebar-nav .menu--sidebar-menu .nav .nav-link .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-menu .nav a .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header a .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header a .sb-nav-link-icon {
   font-size: 0.9rem;

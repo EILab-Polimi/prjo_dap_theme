@@ -65,11 +65,16 @@ set footer_classes = ' ' ~
       <!-- Navbar Brand-->
       <!-- <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a> -->
       {{ page.nav_branding }}
-      <!-- Sidebar Toggle-->
-      <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-      <!-- Navbar-->
-      {{ page.nav_main }}
-      {{ page.nav_additional }}
+      <!-- se non usi flex-row-reverse gira il button prima del menu page.nav_additional -->
+      <div class="d-flex flex-row-reverse justify-content-between me-4 ms-4 w-100 bg-white shadow rounded">
+        <!-- Navbar-->
+        {# {{ page.nav_main }} #}
+        <!-- <div class="d-flex"> -->
+        {{ page.nav_additional }}
+        <!-- </div> -->
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+      </div>
   </nav>
   {% endif %}
 
@@ -80,7 +85,7 @@ set footer_classes = ' ' ~
         {{ page.sidebar_nav }}
     </div>
     <div id="layoutSidenav_content">
-      <main role="main" style="margin: 0 20px;">
+      <main role="main" class="ms-3 me-3">
         <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
         {%
