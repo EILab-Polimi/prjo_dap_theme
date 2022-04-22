@@ -9,6 +9,7 @@
     flex-direction: column;
     height: 100%;
     flex-wrap: nowrap;
+    background-color: $white;
 
     .menu--sidebar-menu {
         flex-grow: 1;
@@ -18,7 +19,7 @@
             flex-wrap: nowrap;
 
             .nav-item {
-                padding: 0.75rem 2rem 0.75rem;
+                padding: 0.75rem 0 0 0.75rem;
                 font-size: 0.75rem;
                 font-weight: bold;
                 // text-transform: uppercase;
@@ -30,7 +31,7 @@
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
                 position: relative;
-                border-radius: 10px 0px 0px 10px;
+                border-radius: 6px 0px 0px 6px;
 
                 .sb-nav-link-icon {
                     font-size: 0.9rem;
