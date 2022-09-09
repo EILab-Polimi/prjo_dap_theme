@@ -12377,6 +12377,9 @@ code {
   position: relative;
   border-radius: 6px 0px 0px 6px;
 }
+.region-sidebar-nav .menu--sidebar-menu .nav .nav-link > span, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header .nav-link > span, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header .nav-link > span, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-menu .nav a > span, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header a > span, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header a > span {
+  margin-left: 10px;
+}
 .region-sidebar-nav .menu--sidebar-menu .nav .nav-link .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-menu .nav a .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header a .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header a .sb-nav-link-icon {
   font-size: 0.9rem;
 }
@@ -12396,6 +12399,60 @@ code {
   color: #026698;
 }
 .region-sidebar-nav .menu--sidebar-menu .nav .sb-sidenav-menu-nested, .region-sidebar-nav .menu--sidebar-menu .media-library-view--widget .view-header .sb-sidenav-menu-nested, .media-library-view--widget .region-sidebar-nav .menu--sidebar-menu .view-header .sb-sidenav-menu-nested {
+  margin-left: 1.5rem;
+  flex-direction: column;
+}
+.region-sidebar-nav .sb-sidenav-footer {
+  padding: 0.75rem;
+  flex-shrink: 0;
+}
+
+.region-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-item, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-item, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-item {
+  padding: 0.75rem 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a {
+  display: flex;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+  border-radius: 6px 0px 0px 6px;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link > span, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link > span, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link > span, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a > span, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a > span, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a > span {
+  margin-left: 10px;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link .sb-nav-link-icon, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a .sb-nav-link-icon {
+  font-size: 0.9rem;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link .sb-sidenav-collapse-arrow, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link .sb-sidenav-collapse-arrow, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link .sb-sidenav-collapse-arrow, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a .sb-sidenav-collapse-arrow, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a .sb-sidenav-collapse-arrow, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a .sb-sidenav-collapse-arrow {
+  display: inline-block;
+  margin-left: auto;
+  transition: transform 0.15s ease;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link.collapsed .sb-sidenav-collapse-arrow, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link.collapsed .sb-sidenav-collapse-arrow, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link.collapsed .sb-sidenav-collapse-arrow, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a.collapsed .sb-sidenav-collapse-arrow, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a.collapsed .sb-sidenav-collapse-arrow, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a.collapsed .sb-sidenav-collapse-arrow {
+  transform: rotate(-90deg);
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link.active, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link.active, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link.active, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a.active, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a.active, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a.active, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a.is-active, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a.is-active, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a.is-active {
+  color: #fff;
+  background-color: #026698;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .nav-link.active .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .nav-link.active .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .nav-link.active .sb-nav-link-icon, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a.active .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a.active .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a.active .sb-nav-link-icon, .media-library-view--widget .view-header .region-sidebar-nav .menu--sidebar-main-menu .nav a.is-active .sb-nav-link-icon, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header a.is-active .sb-nav-link-icon, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header a.is-active .sb-nav-link-icon {
+  color: #026698;
+}
+.region-sidebar-nav .menu--sidebar-main-menu .nav .sb-sidenav-menu-nested, .region-sidebar-nav .menu--sidebar-main-menu .media-library-view--widget .view-header .sb-sidenav-menu-nested, .media-library-view--widget .region-sidebar-nav .menu--sidebar-main-menu .view-header .sb-sidenav-menu-nested {
   margin-left: 1.5rem;
   flex-direction: column;
 }
