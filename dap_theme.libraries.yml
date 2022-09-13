@@ -6,3 +6,9 @@ global-styling:
 sidenav-behavior:
   js:
     js/scripts.js: {}
+
+front-script:
+  version: 1.x
+  css:
+    theme:
+      css/front.css: {}
