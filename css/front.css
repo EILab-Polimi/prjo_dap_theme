@@ -5,6 +5,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #1D4D64;
 }
 
+a.internal {
+  text-decoration: none !important;
+  padding: 0 2rem 0 2rem;
+}
+/* Login */
+#block-dap-theme-account-menu > ul > li > a {
+  color: white;
+}
+
 
 /* Contact form */
 form.contact-message-feedback-form input {

@@ -62,7 +62,7 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <nav class="{{ nav_classes }}">
+  <nav class="{{ nav_classes }} ms-5 me-5">
     <div class="{{ b5_top_container }} d-flex">
       {{ page.nav_branding }}
 
@@ -88,7 +88,7 @@ set footer_classes = ' ' ~
                 </li>
               {% else %}
                 <li class="nav-item ml-5 mr-5">
-                    <span class="nav-item nav-link"><a class="h6 text-uppercase" href="{{ url('prjo_ucp.dashboard') }}">Go to platform</a></span>
+                    <span class="nav-item nav-link"><a class="h6 text-uppercase" href="{{ url('prjo_dap.portfolios') }}">Go to platform</a></span>
                 </li>
               {% endif %}
           </ul>
@@ -134,44 +134,43 @@ set footer_classes = ' ' ~
       <div class="order-1 order-lg-2 {{ content_classes }}" style="color: #787878;">
         {# {{ page.content }} #}
         <!-- Water image && white -->
-        <div class="row no-gutters">
-          <div class="col" style="background-image:url('/sites/default/files/dap_hp_images/water-analysis.png');
+        <div class="row g-0">
+          <div class="col" style="background-image:url('/sites/default/files/dap_hp_images/20220815_Locone_Sentinel2.jpg');
           background-size: cover;
           background-position: right;">
             <div class="d-flex flex-column align-items-center justify-content-center h-100" style="padding: 18vh;">
               <div class="row">
                 <div class="col">
-                  <div class="mb-5 text-center" style="color: white;">
-                    <h1>Project Ô - DAP</h1>
-                    <h6>Decision Analytic Platform</h6>
+                  <div class="mb-5 text-center">
+                    <h1 style="color: white; font-size:80px;">Project Ô - DAP</h1>
+                    <h5 style="color: white; font-size:40px;">Decision Analytic Platform</h5>
                   </div>
                 </div>
               </div>
-              <div class="row no-gutters" style="height: 10vh;">
+              <div class="row g-0" style="height: 10vh;">
               </div>
 
             </div>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row g-0">
           <div class="col" style="height: 40vh;"></div>
         </div>
 
         <!-- About -->
-        <div id="about" class="row no-gutters" style="position:absolute; top:50vh;">
+        <div id="about" class="row g-0" style="position:absolute; top:50vh;">
           <div class="col-1"></div>
           <div class="col-10">
             <div class="card shadow" style="border:none;">
                 <div class="row">
                   <div class="col p-5">
                     <h1 class="text-uppercase">ABOUT DAP</h1>
-                    <p>The Decision Analytic Platform is a tool developed within Project O - Circular Water Solutions for Sustainable Development Goals 6 and 12 on Clean Water and Sanitation & Responsible Consumption and Production.</p>
+                    <p>The Decision Analytic Platform is a tool developed within Project Ô - Circular Water Solutions for Sustainable Development Goals 6 and 12 on Clean Water and Sanitation & Responsible Consumption and Production.</p>
 
                     <p>The main goal of this platform is to improve the resilience of a community (at hydrological basin-scale) supporting water authorities to enhance wastewater, e.g. by selecting and adopting the proper technology to reconnect polluted wells to the water main distribution network, or by exploiting refined water from wastewater treatment plants to irrigate suitable crops.</p>
                   </div>
-                  <div class="col rounded-right" style="background-image:url('/sites/default/files/dap_hp_images/mountain.png');
+                  <div class="col rounded-right" style="background-image:url('/sites/default/files/dap_hp_images/ryo-yoshitake-ZKGZXSAAR_w-unsplash.jpg');
                   background-size: cover;">
-                    <!-- <img class="img-fluid rounded-right" style="/*height:100%;*/" src="/sites/default/files/ucp_hp_images/22958ae0dec9949756e3d211e8ed9959.jpeg" alt=""> -->
                   </div>
                 </div>
             </div>
@@ -180,7 +179,7 @@ set footer_classes = ' ' ~
         </div>
 
         <!-- Platform  -->
-        <div id="platform" class="row no-gutters mb-5">
+        <div id="platform" class="row g-0 mb-5">
           <div class="col-7 pl-5">
             <img class="img-fluid" src="/sites/default/files/ucp_hp_images/platform_1.png" alt="">
           </div>
@@ -193,7 +192,7 @@ set footer_classes = ' ' ~
           <!-- <div class="col-1"></div> -->
         </div>
 
-        <div class="row no-gutters mb-2">
+        <div class="row g-0 mb-2">
           <!-- <div class="col-1"></div> -->
           <div class="col-5 p-5">
             <h1 class="text-uppercase">The paltform</h1>
@@ -207,7 +206,7 @@ set footer_classes = ' ' ~
 
         <!-- Contacts Only for non auth users -->
         {% if not logged_in %}
-          <div id="contacts" class="row no-gutters pt-5 pb-5" style="background-color: #F8F9FC;">
+          <div id="contacts" class="row g-0 pt-5 pb-5" style="background-color: #F8F9FC;">
             <div class="col-1"></div>
             <div class="col-6 pr-5">
               <h1 class="text-uppercase">Contacts</h1>
@@ -239,29 +238,20 @@ set footer_classes = ' ' ~
 <footer class="mt-auto {{ footer_classes }}">
   <div class="{{ b5_top_container }}">
     {# {{ page.footer }} #}
-    <div class="row no-gutters">
-      <div class="col-4 pt-5 pl-5 pr-5">
-        <a href="https://www.fondazionepolitecnico.it/en/home/">
-          <img class="img-fluid float-right" style="width:40%;" src="/sites/default/files/ucp_hp_images/fondazione-politecnico-di-milano.svg" alt="">
+    <div class="row g-0">
+      <div class="col pt-5 pl-5 pr-5">
+        <a href="https://www.eu-project-o.eu/">
+          <img class="img-fluid" style="width:80%;" src="/sites/default/files/ucp_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
         </a>
+        <p class="pl-5 pr-5">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 776816.</p>
       </div>
-      <div class="col-4 pt-5 pl-5 pr-5">
-              <a href="https://www.eu-project-o.eu/">
-                <img class="img-fluid" style="width:80%;" src="/sites/default/files/ucp_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
-              </a>
-              <p class="pl-5 pr-5">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 776816.</p>
-            </div>
-            <div class="col-4 pt-5 pl-5 pr-5">
-              <!-- <div class="topbar-socials"> -->
-                <!-- <ul class="redux-social-media-list clearfix"> -->
-                  <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://twitter.com/EUProjectO"><i class="fab fa-twitter fa-2x" title=""></i></a></li>
-                  <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.facebook.com/EU-Project-%C3%94-2197932670430462/"><i class="fab fa-facebook-square fa-2x" title=""></i></a></li>
-                  <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.linkedin.com/company/eu-project-ô/"><i class="fab fa-linkedin-in fa-2x" title=""></i></a></li>
-                  <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.youtube.com/channel/UCi7PklOSqQ9PMO7ay88WIfw"><i class="fab fa-youtube fa-2x" title=""></i></a></li>
-                <!-- </ul> -->
-              <!-- </div> -->
-            </div>
+      <div class="col pt-5 pl-5 pr-5">
+        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://twitter.com/EUProjectO"><i class="fab fa-twitter fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.facebook.com/EU-Project-%C3%94-2197932670430462/"><i class="fab fa-facebook-square fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.linkedin.com/company/eu-project-ô/"><i class="fab fa-linkedin-in fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.youtube.com/channel/UCi7PklOSqQ9PMO7ay88WIfw"><i class="fab fa-youtube fa-2x" title=""></i></a></li>
       </div>
+    </div>
   </div>
 </footer>
 {% endif %}
