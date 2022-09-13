@@ -30,7 +30,7 @@ We call a macro which calls itself to render the full tree.
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-    <ul {{ attributes.addClass('navbar-nav mr-auto') }}>
+    <ul{{ attributes.addClass('navbar-nav mr-auto') }}>
     {% else %}
     <ul class="dropdown-menu">
     {% endif %}
@@ -46,18 +46,17 @@ We call a macro which calls itself to render the full tree.
   {%
     set list_item_classes = [
     'nav-item',
-    item.is_expanded ? 'dropdown',
-    item.is_expanded ? 'no-arrow'
+    item.is_expanded ? 'dropdown'
   ]
   %}
   {%
     set link_class = [
-    menu_level == 0 ? 'nav-item',
-    menu_level == 0 ? 'nav-link',
-    item.in_active_trail ? 'active',
-    menu_level == 0 and (item.is_expanded or item.is_collapsed) ? 'dropdown-toggle',
-    menu_level > 0 ? 'dropdown-item',
-  ]
+      menu_level == 0 ? 'nav-item',
+      menu_level == 0 ? 'nav-link',
+      item.in_active_trail ? 'active',
+      menu_level == 0 and (item.is_expanded or item.is_collapsed) ? 'dropdown-toggle',
+      menu_level > 0 ? 'dropdown-item',
+    ]
   %}
   {%
     set toggle_class = [
@@ -65,7 +64,7 @@ We call a macro which calls itself to render the full tree.
   %}
   <li{{ item.attributes.addClass(list_item_classes) }}>
     {% if menu_level == 0 and item.below %}
-      {{ link(item.title, item.url, { 'class': link_class, 'data-bs-toggle' : 'dropdown', 'title': ('Expand menu' | t) ~ ' ' ~ item.title }) }}
+      {{ link(item.title, item.url, { 'class': link_class, 'role': 'button', 'data-bs-toggle': 'dropdown', 'aria-expanded': 'false', 'title': ('Expand menu' | t) ~ ' ' ~ item.title }) }}
       {{ menus.build_menu(item.below, attributes, menu_level + 1) }}
     {% else %}
       {{ link(item.title, item.url, { 'class': link_class }) }}
