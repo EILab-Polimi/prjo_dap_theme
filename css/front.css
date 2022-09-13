@@ -9,9 +9,12 @@ a.internal {
   text-decoration: none !important;
   padding: 0 2rem 0 2rem;
 }
+
+
 /* Login */
 #block-dap-theme-account-menu > ul > li > a {
   color: white;
+  background-color: #026698;
 }
 
 
