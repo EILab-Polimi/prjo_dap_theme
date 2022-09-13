@@ -181,7 +181,7 @@ set footer_classes = ' ' ~
         <!-- Platform  -->
         <div id="platform" class="row g-0 mb-5">
           <div class="col-7 pl-5">
-            <img class="img-fluid" src="/sites/default/files/ucp_hp_images/platform_1.png" alt="">
+            <img class="img-fluid" src="/sites/default/files/dap_hp_images/platform_1.png" alt="">
           </div>
           <div class="col-5 p-5">
             <h1 class="text-uppercase">The platform</h1>
@@ -199,8 +199,8 @@ set footer_classes = ' ' ~
             <p>The New Water Loop creation procedure represents the core of User Collaborative Platform.</p>
             <p>Here the best match among water demands, water streams, and treatment technologies can be identified, starting from the interactive map to select the nearest opportunity and exploiting information and data inserted in the platform to understand to what extent each water loop can satisfy different water uses.</p>
           </div>
-          <div class="col-7 pr-5">
-            <img class="img-fluid" src="/sites/default/files/ucp_hp_images/ds2wl.png" alt="">
+          <div class="col-7 pe-5">
+            <img class="img-fluid" src="/sites/default/files/dap_hp_images/ds2wl.png" alt="">
           </div>
         </div>
 
@@ -208,17 +208,15 @@ set footer_classes = ' ' ~
         {% if not logged_in %}
           <div id="contacts" class="row g-0 pt-5 pb-5" style="background-color: #F8F9FC;">
             <div class="col-1"></div>
-            <div class="col-6 pr-5">
+            <div class="col-6 pe-5">
               <h1 class="text-uppercase">Contacts</h1>
               <p>For further information send us an email</p>
               {# {{ kint( contact_form ) }} #}
               {# {{ dump(contact_form) }} #}
               {{ contact_form }}
             </div>
-            <div class="col-4 rounded" style="background-image:url('/sites/default/files/ucp_hp_images/015604bcb59d2b23586eea8ba95ebd84.jpeg');
+            <div class="col-4 rounded" style="background-image:url('/sites/default/files/dap_hp_images/015604bcb59d2b23586eea8ba95ebd84.jpeg');
             background-size: cover;">
-
-              <!-- <img class="img-fluid" style="height:100%;" src="/sites/default/files/ucp_hp_images/015604bcb59d2b23586eea8ba95ebd84.jpeg" alt=""> -->
             </div>
             <div class="col-1"></div>
           </div>
@@ -235,21 +233,21 @@ set footer_classes = ' ' ~
 </main>
 
 {% if page.footer %}
-<footer class="mt-auto {{ footer_classes }}">
+<footer class="mt-auto {{ footer_classes }} bg-primary text-light">
   <div class="{{ b5_top_container }}">
     {# {{ page.footer }} #}
     <div class="row g-0">
-      <div class="col pt-5 pl-5 pr-5">
+      <div class="col pt-5 ps-5 pe-5">
         <a href="https://www.eu-project-o.eu/">
-          <img class="img-fluid" style="width:80%;" src="/sites/default/files/ucp_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
+          <img class="img-fluid" style="width:80%;" src="/sites/default/files/dap_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
         </a>
-        <p class="pl-5 pr-5">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 776816.</p>
+        <p class="ps-5 pe-5">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 776816.</p>
       </div>
-      <div class="col pt-5 pl-5 pr-5">
-        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://twitter.com/EUProjectO"><i class="fab fa-twitter fa-2x" title=""></i></a></li>
-        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.facebook.com/EU-Project-%C3%94-2197932670430462/"><i class="fab fa-facebook-square fa-2x" title=""></i></a></li>
-        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.linkedin.com/company/eu-project-ô/"><i class="fab fa-linkedin-in fa-2x" title=""></i></a></li>
-        <li style="list-style: none;" class="mb-2"><a class="text-gray-100" target="_blank" href="https://www.youtube.com/channel/UCi7PklOSqQ9PMO7ay88WIfw"><i class="fab fa-youtube fa-2x" title=""></i></a></li>
+      <div class="col pt-5 ps-5 pe-5">
+        <li style="list-style: none;" class="mb-2"><a class="text-light" target="_blank" href="https://twitter.com/EUProjectO"><i class="fab fa-twitter fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-light" target="_blank" href="https://www.facebook.com/EU-Project-%C3%94-2197932670430462/"><i class="fab fa-facebook-square fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/company/eu-project-ô/"><i class="fab fa-linkedin-in fa-2x" title=""></i></a></li>
+        <li style="list-style: none;" class="mb-2"><a class="text-light" target="_blank" href="https://www.youtube.com/channel/UCi7PklOSqQ9PMO7ay88WIfw"><i class="fab fa-youtube fa-2x" title=""></i></a></li>
       </div>
     </div>
   </div>
