@@ -1,4 +1,4 @@
-// 
+//
 // Authentication layout
 //
 
@@ -15,4 +15,24 @@
     #layoutAuthentication_footer {
         min-width: 0;
     }
+}
+
+
+.bg-login-image {
+  background: url($login-image);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-register-image {
+  background: url($register-image);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-password-image {
+  background: url($password-image);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
