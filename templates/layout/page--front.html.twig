@@ -62,7 +62,7 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <nav class="{{ nav_classes }} ms-5 me-5">
+  <nav class="{{ nav_classes }}ms-5 me-5">
     <div class="{{ b5_top_container }} d-flex">
       {{ page.nav_branding }}
 
@@ -135,7 +135,7 @@ set footer_classes = ' ' ~
         {# {{ page.content }} #}
         <!-- Water image && white -->
         <div class="row g-0">
-          <div class="col" style="background-image:url('/sites/default/files/dap_hp_images/20220815_Locone_Sentinel2.jpg');
+          <div class="col" style="background-image:url('/sites/default/files/dap_hp_images/bkg_1-min.png');
           background-size: cover;
           background-position: right;">
             <div class="d-flex flex-column align-items-center justify-content-center h-100" style="padding: 18vh;">
@@ -158,7 +158,7 @@ set footer_classes = ' ' ~
         </div>
 
         <!-- About -->
-        <div id="about" class="row g-0" style="position:absolute; top:50vh;">
+        <div id="about" class="row g-0" style="position:absolute; top:56vh;">
           <div class="col-1"></div>
           <div class="col-10">
             <div class="card shadow" style="border:none;">
@@ -181,12 +181,12 @@ set footer_classes = ' ' ~
         <!-- Platform  -->
         <div id="platform" class="row g-0 mb-5">
           <div class="col-7 pl-5">
-            <img class="img-fluid" src="/sites/default/files/dap_hp_images/platform_1.png" alt="">
+            <img class="img-fluid" src="/sites/default/files/dap_hp_images/Outline.png" alt="">
           </div>
           <div class="col-5 p-5">
-            <h1 class="text-uppercase">The platform</h1>
-            <p>DAP can be seen as a container where different roles interact, bringing each one its own expertise, needs and resources in order to create New Water Loops, defined as the intersection between water demand, water stream offer and water treatment technologies.</p>
-            <p>Once a new water loop has been created, availability of logistic facilities can also be considered and assessed.</p>
+            <h1 class="text-uppercase">OUTLINE</h1>
+            <p>Each Water Planning Portfolio (WPP) is formally defined by the combination of the considered actions, expressed in terms of constraints, parameters, rules, or other quantitative information needed to run the models and simulate WPP impacts under different scenarios.</p>
+            <p>The DAP allows exploring these information through a set of descriptive indicators, spatially and temporally distributed, providing a quantitative outline of the actions taken into considerations for each WPP.</p>
             <!-- <p>The platform makes easier the exchange of information between users belonging to different roles and it foster the creation of new opportunities and water loops.</p> -->
           </div>
           <!-- <div class="col-1"></div> -->
@@ -195,13 +195,27 @@ set footer_classes = ' ' ~
         <div class="row g-0 mb-2">
           <!-- <div class="col-1"></div> -->
           <div class="col-5 p-5">
-            <h1 class="text-uppercase">The paltform</h1>
-            <p>The New Water Loop creation procedure represents the core of User Collaborative Platform.</p>
-            <p>Here the best match among water demands, water streams, and treatment technologies can be identified, starting from the interactive map to select the nearest opportunity and exploiting information and data inserted in the platform to understand to what extent each water loop can satisfy different water uses.</p>
+            <h1 class="text-uppercase">EVALUATION (charts)</h1>
+            <p>The Multiobjective Water Planning Portfolio Design generates a number of simulations for different combinations of future Scenarios and WPPs.</p>
+            <p>A set of evaluation indicators, eventually disaggregated over time and space, are used to assess performances of each available combination across the time horizon.</p>
           </div>
           <div class="col-7 pe-5">
-            <img class="img-fluid" src="/sites/default/files/dap_hp_images/ds2wl.png" alt="">
+            <img class="img-fluid" src="/sites/default/files/dap_hp_images/Evaluation_charts.png" alt="">
           </div>
+        </div>
+
+        <div class="row g-0 mb-2">
+          <div class="col-7 pl-5">
+            <img class="img-fluid" src="/sites/default/files/dap_hp_images/Evaluation_map.png" alt="">
+          </div>
+          <div class="col-5 p-5">
+            <h1 class="text-uppercase">EVALUATION (map)</h1>
+            <p>The DAP includes two pages to assess WPP impacts through indicators.</p>
+            <p>The Evaluation Map is a fully featured webGIS, targeted to provide the spatial representation of indicators.</p>
+            <p>The Evaluation Charts is a dynamic page where a number of pre-loaded charts present the design indicators.</p>
+            <p>Users can also expand his analysis by adding more indicators to the page and switching among different combinations of WPP and Scenarios.</p>
+          </div>
+          <!-- <div class="col-1"></div> -->
         </div>
 
         <!-- Contacts Only for non auth users -->
