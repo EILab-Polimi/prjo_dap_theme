@@ -34,15 +34,14 @@ We call a macro which calls itself to render the full tree.
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass('nav navbar-nav').setAttribute('id', 'accordion') }}>
     {% else %}
-      <ul class="sub-menu card-body">
+      <ul class="sub-menu">
 
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
           menu_level ? 'sub-item' : 'nav-item',
-          item.in_active_trail ? 'active',
-          item.below ? 'card',
+          item.in_active_trail ? 'active'
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
@@ -56,21 +55,21 @@ We call a macro which calls itself to render the full tree.
         %}
         {% if item.below %}
 		{% if item.in_active_trail %}
-		<div class="card-header" id="heading{{ip}}">
-		<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="true" aria-controls="collapse{{ip}}">
+		<div id="heading{{ip}}">
+		<span class="nav-item nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="true" aria-controls="collapse{{ip}}">
 
           {{ item.title }}
-         </button>
+        </span>
 		 </div>
 
 		 <div id="collapse{{ip}}" class="collapse show" aria-labelledby="heading{{ip}}" data-parent="#accordion">
 		  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
 		  {% else %}
-		  <div class="card-header" id="heading{{ip}}">
-		<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="false" aria-controls="collapse{{ip}}">
+		  <div id="heading{{ip}}">
+		<span class="nav-item nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="false" aria-controls="collapse{{ip}}">
 
           {{ item.title }}
-         </button>
+        </span>
 		 </div>
 
 		 <div id="collapse{{ip}}" class="collapse" aria-labelledby="heading{{ip}}" data-parent="#accordion">
