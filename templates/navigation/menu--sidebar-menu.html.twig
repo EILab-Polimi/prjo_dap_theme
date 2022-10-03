@@ -57,7 +57,7 @@ We call a macro which calls itself to render the full tree.
         {% if item.below %}
 		{% if item.in_active_trail %}
 		<div class="card-header" id="heading{{ip}}">
-		<button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ip}}" aria-expanded="true" aria-controls="collapse{{ip}}">
+		<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="true" aria-controls="collapse{{ip}}">
 
           {{ item.title }}
          </button>
@@ -67,7 +67,7 @@ We call a macro which calls itself to render the full tree.
 		  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
 		  {% else %}
 		  <div class="card-header" id="heading{{ip}}">
-		<button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ip}}" aria-expanded="false" aria-controls="collapse{{ip}}">
+		<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse{{ip}}" aria-expanded="false" aria-controls="collapse{{ip}}">
 
           {{ item.title }}
          </button>
