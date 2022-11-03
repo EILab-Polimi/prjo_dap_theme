@@ -135,7 +135,7 @@ set footer_classes = ' ' ~
         {# {{ page.content }} #}
         <!-- Water image && white -->
         <div class="row g-0">
-          <div class="col" style="background-image:url('/sites/default/files/dap_hp_images/bkg_1-min.png');
+          <div class="col" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/bkg_1-min.png');
           background-size: cover;
           background-position: right;">
             <div class="d-flex flex-column align-items-center justify-content-center h-100" style="padding: 18vh;">
@@ -169,7 +169,7 @@ set footer_classes = ' ' ~
 
                     <p>The main goal of this platform is to improve the resilience of a community (at hydrological basin-scale) supporting water authorities to enhance wastewater, e.g. by selecting and adopting the proper technology to reconnect polluted wells to the water main distribution network, or by exploiting refined water from wastewater treatment plants to irrigate suitable crops.</p>
                   </div>
-                  <div class="col rounded-right" style="background-image:url('/sites/default/files/dap_hp_images/ryo-yoshitake-ZKGZXSAAR_w-unsplash.jpg');
+                  <div class="col rounded-right" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/ryo-yoshitake-ZKGZXSAAR_w-unsplash.jpg');
                   background-size: cover;">
                   </div>
                 </div>
@@ -180,7 +180,7 @@ set footer_classes = ' ' ~
 
         <!-- Platform  -->
         <div id="platform" class="row g-0 mb-5" style="min-height:60vh;">
-          <div class="col-7 ps-5" style="background-image:url('/sites/default/files/dap_hp_images/Outline.png');
+          <div class="col-7 ps-5" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/Outline.png');
                       background-size: contain;
                       background-position: center;
                       background-repeat: no-repeat;">
@@ -202,7 +202,7 @@ set footer_classes = ' ' ~
             <p>The Multiobjective Water Planning Portfolio Design generates a number of simulations for different combinations of future Scenarios and WPPs.</p>
             <p>A set of evaluation indicators, eventually disaggregated over time and space, are used to assess performances of each available combination across the time horizon.</p>
           </div>
-          <div class="col-7 pe-5" style="background-image:url('/sites/default/files/dap_hp_images/Evaluation_charts.png');
+          <div class="col-7 pe-5" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/Evaluation_charts.png');
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;">
@@ -211,7 +211,7 @@ set footer_classes = ' ' ~
         </div>
 
         <div class="row g-0 mb-2" style="min-height:60vh;">
-          <div class="col-7 ps-5" style="background-image:url('/sites/default/files/dap_hp_images/Evaluation_map.png');
+          <div class="col-7 ps-5" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/Evaluation_map.png');
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;">
@@ -238,7 +238,7 @@ set footer_classes = ' ' ~
               {# {{ dump(contact_form) }} #}
               {{ contact_form }}
             </div>
-            <div class="col-4 rounded" style="background-image:url('/sites/default/files/dap_hp_images/015604bcb59d2b23586eea8ba95ebd84.jpeg');
+            <div class="col-4 rounded" style="background-image:url('{{ base_path }}sites/default/files/dap_hp_images/015604bcb59d2b23586eea8ba95ebd84.jpeg');
             background-size: cover;">
             </div>
             <div class="col-1"></div>
@@ -262,7 +262,7 @@ set footer_classes = ' ' ~
     <div class="row g-0">
       <div class="col pt-5 ps-5 pe-5">
         <a href="https://www.eu-project-o.eu/">
-          <img class="img-fluid" style="width:80%;" src="/sites/default/files/dap_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
+          <img class="img-fluid" style="width:80%;" src="{{ base_path }}sites/default/files/dap_hp_images/Logo-for-Website-Dark-Padding.png" alt="">
         </a>
         <p class="ps-5 pe-5">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 776816.</p>
       </div>
