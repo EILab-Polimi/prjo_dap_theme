@@ -1,3 +1,6 @@
+# prjo_dap_theme
+Drupal theme for the Decision Analytic Platform
+
 # Dap theme theme
 
 [Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.
